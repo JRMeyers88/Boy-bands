@@ -18,28 +18,16 @@ var veggieElement = document.getElementById("vegetables");
 
 // Start looping
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
-
-
-
-
-
   
   // Add the band names into the correct <div>
   currentBand = bands[loopTracker];
+  console.log("current band", currentBand);
+  bandElement.innerHTML += `<div class="blue">${currentBand} </div>`;
 
   
   // Add the veggie names into the correct <div>
   currentVeggie = vegetables[loopTracker];
+  console.log("current veggie", currentVeggie);
+  veggieElement.innerHTML += `<div class="green">${currentVeggie} </div>`;
 
 }
-
-for (var i = 0; i < vegetables.length; i++) {
-	bandElement.innerHTML += "<div id='boy-bands'>" + currentBand + "</div>"
-	
-
-}
-
-console.log("currentBand");
-console.log("currentVeggie");
-
-
